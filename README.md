@@ -83,7 +83,13 @@ CineClub/
 - SwiftUI
 - Xcode
 
+## Desafio: compartilhar o estado dos favoritos
+
+No gabarito, o coração da aba **Filmes** só muda o estado daquela tela, e a aba **Favoritos** mostra uma lista fixa. Faça com que um filme favoritado apareça na aba **Favoritos** e saia dela ao desfavoritar.
+
+**Dica:** o estado precisa ficar fora de `MoviesView`. Pesquise por `ObservableObject` e `@EnvironmentObject` (o projeto usa iOS 16, então o `@Observable` não está disponível).
+
 ## Observações
 
 - Os dados dos filmes são fixos no código. Não há API nem banco de dados.
-- No gabarito, a aba **Favoritos** mostra uma lista fixa e ainda não é atualizada pelos corações da aba **Filmes**. Compartilhar o estado entre as duas telas é um bom exercício para depois do workshop.
+- No gabarito, a aba **Favoritos** ainda não reage aos corações da aba **Filmes**. Veja o desafio acima.
